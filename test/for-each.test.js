@@ -7,18 +7,17 @@ import {
 
 const { test, skip } = QUnit;
 
-const pets = [
-    {
-        type: 'cat',
-        name: 'coco',
-    },
-    {
-        type: 'frog',
-        name: 'jumper',
-    }
-];
-
 test('should make an array of names', (expect) => {
+    const pets = [
+        {
+            type: 'cat',
+            name: 'coco',
+        },
+        {
+            type: 'frog',
+            name: 'jumper',
+        }
+    ];
     //Arrange
     // Set up your arguments and expectations
     const expected = ['coco', 'jumper'];
@@ -33,6 +32,16 @@ test('should make an array of names', (expect) => {
 });
 
 test('should make a reverse array of type', (expect) => {
+    const pets = [
+        {
+            type: 'cat',
+            name: 'coco',
+        },
+        {
+            type: 'frog',
+            name: 'jumper',
+        }
+    ];
     //Arrange
     // Set up your arguments and expectations
     const expected = ['frog', 'cat'];
@@ -47,6 +56,16 @@ test('should make a reverse array of type', (expect) => {
 });
 
 test('should make a spanish array of pet objects', (expect) => {
+    const pets = [
+        {
+            type: 'cat',
+            name: 'coco',
+        },
+        {
+            type: 'frog',
+            name: 'jumper',
+        }
+    ];
     //Arrange
     // Set up your arguments and expectations
     const expected = [

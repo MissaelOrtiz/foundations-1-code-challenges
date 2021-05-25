@@ -51,6 +51,19 @@ export function makeWeirdStringFromKeys(someObject) {
 
 /*
 Output:
+{
+    WHEELS: 8,
+    TYPE: 'truck',
+    GOES: 'vroom',
+}
+*/
+
+export function makeMoreScreamingKeys(someObject) {
+    return {};
+}
+
+/*
+Output:
 [ 
     ['wheels', 8],
     ['type', 'truck'],
