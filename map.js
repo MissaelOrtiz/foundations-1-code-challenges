@@ -33,9 +33,10 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    const original = arr.map(item => item);
+    const original = arr;
     original.map(item => item.isHungry = true)
     return original;
+    //  array.map(item => item.isSleepy = false)
 }
 
 /*

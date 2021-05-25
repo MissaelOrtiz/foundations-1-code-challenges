@@ -19,7 +19,16 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let output = {};
+    for(let key in someObject) {
+        // store the original value
+        let value = someObject[key];
+        // change the key to uppercase
+        let changedKey = key.toUpperCase();
+        // change the key within the object to the uppercase and assign its value
+        output[changedKey] = value;
+    }
+    return output;
 }
 
 /*
@@ -36,7 +45,7 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    return Object.keys(someObject).join('');
 }
 
 
@@ -50,5 +59,15 @@ Output:
 */
 
 export function makeTuples(someObject) {
-    return [];
+    const output = Object.entries(someObject);
+    return output;
 }
+
+/*
+Input: 
+{
+    wheels: 8,
+    type: 'truck',
+    goes: 'vroom',
+}
+*/
